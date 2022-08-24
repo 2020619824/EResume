@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CONTACT ME</title>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Nas<span>ruddin</span></h2>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="qualification.html">Qualification</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="contact">
+			<div class="title">
+				<h2>Contact Me</h2>
+				<h5>Let's talk</h5>
+			</div>
+			<div class="contact_container container grid">
+				<div class="contact_content">
+					<div class="contact_info">
+						<a href="https://wa.link/exlmbz" class="contact_card" target="_blank">
+							<i class="uil uil-whatsapp contact_card-icon"></i>
+							<h3 class="contact_card-title">WhatsApp</h3>
+							<span class="contact_card-data">+60 17 935 6048</span>
+						</a>
+						
+						<a href="mailto:ahmadnasruddin69@gmail.com?subject=Assalamualaikum" class="contact_card" target="_blank">
+							<i class="uil uil-envelope-alt contact_card-icon"></i>
+							<h3 class="contact_card-title">Email</h3>
+							<span class="contact_card-data">ahmadnasruddin69@gmail.com</span>
+						</a>
+						
+						<a href="https://goo.gl/maps/2EZtNCHcjbNkBuA49" class="contact_card" target="_blank">
+							<i class="uil uil-map-pin-alt contact_card-icon"></i>
+							<h3 class="contact_card-title">Address</h3>
+							<span class="contact_card-data">D2, Perumahan Awam Bukit Cik Nik,<br>Binjai Rendah, 21400 Marang,<br>Terengganu</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="contact_content">
+					<form action="" class="contact_form" method="post">
+						<div class="details">
+							<div class="input_container">
+								<input type="text" id="name" class="input" autocomplete="off" placeholder="Enter your name" required>
+								<label class="label" for="name">Name</label>
+							</div>
+							<div class="input_container">
+								<input type="email" id="email" class="input" autocomplete="off" placeholder="Enter your email" required>
+								<label class="label" for="email">Email</label>
+							</div>
+						</div>
+						<div class="input_container">
+							<textarea id="message" class="input" rows="5" placeholder="Enter your message"></textarea>
+							<label class="label" for="message">Message</label>
+						</div>
+						<div class="checkbox_container">
+							<input type="checkbox" id="rating" onclick="togglePopup()" class="input_rate">
+							<label for="rating">Rate My Website</label>
+						</div>
+						<div id="feedback" class="feedback">
+							<div class="radio_container">
+								<div class="star-widget" onclick="showSelect()">
+									<input type="radio" name="rate" id="rate-5">
+									<label for="rate-5" class="uil uil-star rate_icon"></label>
+									<input type="radio" name="rate" id="rate-4">
+									<label for="rate-4" class="uil uil-star rate_icon"></label>
+									<input type="radio" name="rate" id="rate-3">
+									<label for="rate-3" class="uil uil-star rate_icon"></label>
+									<input type="radio" name="rate" id="rate-2">
+									<label for="rate-2" class="uil uil-star rate_icon"></label>
+									<input type="radio" name="rate" id="rate-1">
+									<label for="rate-1" class="uil uil-star rate_icon"></label>
+									<header class="caption"></header>
+								</div>
+								<div class="reason_container">
+									<label class="reason_title">Choose one you prefer the BEST:</label>
+									<select name="" class="reason">
+										<option selected disabled value="">Please Select</option>
+										<option value="">Professional Design</option>
+										<option value="">Responsive	Website</option>
+										<option value="">Nice Color Theme</option>
+										<option value="">Informative Content</option>
+										<option value="">Good Image/Video/Audio Quality</option>
+									</select><br><br>
+									<label class="reason_title">Choose one you prefer the WORST:</label>
+									<select name="" class="reason">
+										<option selected disabled value="">Please Select</option>
+										<option value="">Unprofessional Design</option>
+										<option value="">Unresponsive Website</option>
+										<option value="">Bad Color Theme</option>
+										<option value="">Too Much Information</option>
+										<option value="">Pixelated Image/Video/Audio</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+						<button type="submit" class="btn_contact">
+							Send
+							<i class="uil uil-message btn_icon"></i>
+						</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<script type="text/javascript" src="script/contact.js"></script>
+</body>
+</html>

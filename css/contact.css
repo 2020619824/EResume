@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #282828;
+}
+.hero{
+    height: auto;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #38E4DB;
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.logo:hover span{
+    color: white;
+    transition: all 1s ease;
+}
+span{
+    color: #38E4DB;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #38E4DB;
+    transition: .4s;
+}
+.title{
+    margin-top: 50px;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+h5{
+    color: #C0D6DB;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: .75rem;
+    background-color: #282828;
+    border-radius: .25rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #38E4DB;
+    border-radius: .25rem;
+}
+.contact_container{
+    display: grid;
+    grid-template-columns: 300px 500px;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+.contact_info{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact_card{
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+.contact_card:hover{
+    transition: .2s ease-out;
+    transform: scale(0.95);
+}
+.contact_card-icon{
+    font-size: 3rem;
+    color: #38E4DB;
+    margin-bottom: 0.25rem;
+}
+.contact_card-data{
+    font-size: .875rem;
+    color: #C0D6DB;
+}
+.contact_card-title{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.contact_card-data{
+    display: block;
+    margin-bottom: 0.75rem;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.input_container{
+    position: relative;
+    margin-top: .1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;;
+}
+.label{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.4s;
+    padding: 0 2px;
+    z-index: 1;
+    color: white;
+}
+.input {
+    padding: .8rem;
+    width: 100%;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: .50rem;
+    font-weight: 500;
+    font-size: .938rem;
+    outline: none;
+    transition: all 0.3s;
+    color: white;
+    letter-spacing: .5px;
+    outline: none;
+}
+.label::before{
+    content: "";
+    height: 5px;
+    background: transparent;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+.input:focus{
+    border: 2px solid #38E4DB;
+}
+.input:focus + .label,
+.filled {
+    top: -10px;
+    color: #38E4DB;
+    font-size: 14px;
+}
+.input::placeholder{
+    font-size: 16px;
+    color: #C0D6DB;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.input:focus::placeholder{
+    opacity: 1;
+}
+.input:hover{
+    border: 2px inset #38E4DB;
+    transition: .5s ease-in-out;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.btn_contact{
+    background-color: #38E4DB;
+    color: #282828;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .4s;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+}
+.btn_icon{
+    font-size: 1.8rem;
+    background-color: transparent;
+}
+.btn_contact:hover{
+    background-color: transparent;
+    border: 2px solid #38E4DB;
+    color: white;
+    cursor: pointer;
+}
+.checkbox_container label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: white;
+}
+.checkbox_container input[type='checkbox']{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+.checkbox_container label::before{
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: .2rem;
+    border: .05rem solid white;
+}
+.checkbox_container label:hover::before,
+.checkbox_container input[type='checkbox']:hover + label::before{
+    background-color: #C0D6DB;
+}
+.checkbox_container input[type='checkbox']:checked + label::before{
+    content: '\002714';
+    background-color: #38E4DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282828;
+}
+.radio_container{
+    width: auto;
+    background: transparent;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.radio_container .star-widget input{
+     display: none;
+}
+.star-widget{
+    background-color: transparent;
+}
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    background-color: transparent;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: #38E4DB;
+}
+input:checked ~ label{
+    color: #38E4DB;
+}
+input#rate-5:checked ~ label{
+    color: #fe7
+    text-shadow 0 0 20px #952;
+}
+#rate-1:checked ~ .caption:before{
+    content: "Very Unsatisfied 😞";
+}
+#rate-2:checked ~ .caption:before{
+    content: "Unsatisfied 😐";
+}
+#rate-3:checked ~ .caption:before{
+    content: "Neutral 😄";
+}
+#rate-4:checked ~ .caption:before{
+    content: "Satisfied 😊";
+}
+#rate-5:checked ~ .caption:before{
+    content: "Very Satisfied 😘";
+}
+form header{
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+    text-align: center;
+    transition: all 0.2s ease;
+    background-color: transparent;
+}
+.reason_container{
+    margin-top: 2rem;
+}
+.reason_title{
+    color: white;
+}
+select{
+    color: white;
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #38E4DB;
+    margin-top: .3rem;
+    text-align: center;
+}
+select:hover{
+    color: #C0D6DB;
+}
+select:focus option{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #38E4DB;
+    text-align: left;
+}
